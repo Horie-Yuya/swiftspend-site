@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート | SwiftSpend</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; line-height: 1.7; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; color: #1c1c1e; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.2em; margin-top: 2em; }
+  .lang-switch { margin-bottom: 1.5em; }
+  .lang-switch a { margin-right: 12px; }
+  section.en { display: none; }
+  footer { margin-top: 3em; color: #6e6e73; font-size: 0.85em; }
+  a.button { display: inline-block; margin-top: 0.5em; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="#" onclick="showLang('ja');return false;">日本語</a>
+  <a href="#" onclick="showLang('en');return false;">English</a>
+</div>
+
+<section class="ja">
+<h1>SwiftSpend サポート</h1>
+<p>SwiftSpendは、iPhone・iPad・Apple Watch向けの家計簿・予算管理アプリです。ご利用中に不具合やご質問がございましたら、以下の連絡先までお気軽にご連絡ください。</p>
+
+<h2>お問い合わせ</h2>
+<p>Email: <a href="mailto:the0therside0flife.engineer@gmail.com">the0therside0flife.engineer@gmail.com</a></p>
+
+<h2>よくあるご質問</h2>
+<p>データはどこに保存されますか？<br>
+すべてのデータはお使いの端末内にのみ保存されます。外部サーバーへの送信は一切行っていません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+
+<h2>プライバシーポリシー</h2>
+<p><a href="./privacy.html">こちらをご覧ください</a></p>
+</section>
+
+<section class="en">
+<h1>SwiftSpend Support</h1>
+<p>SwiftSpend is a personal budgeting and expense-tracking app for iPhone, iPad, and Apple Watch. If you run into an issue or have a question, please contact us below.</p>
+
+<h2>Contact</h2>
+<p>Email: <a href="mailto:the0therside0flife.engineer@gmail.com">the0therside0flife.engineer@gmail.com</a></p>
+
+<h2>FAQ</h2>
+<p>Where is my data stored?<br>
+All data is stored only on your device. Nothing is ever sent to an external server. See our <a href="./privacy.html">Privacy Policy</a> for details.</p>
+
+<h2>Privacy Policy</h2>
+<p><a href="./privacy.html">View Privacy Policy</a></p>
+</section>
+
+<footer>&copy; 2026 SwiftSpend</footer>
+
+<script>
+function showLang(lang) {
+  document.querySelectorAll('section.ja').forEach(function(el){ el.style.display = (lang === 'ja') ? 'block' : 'none'; });
+  document.querySelectorAll('section.en').forEach(function(el){ el.style.display = (lang === 'en') ? 'block' : 'none'; });
+}
+</script>
+
+</body>
+</html>
